@@ -3,7 +3,8 @@
 * [강의]()
 
 * 이 프로젝트는 홍익대학교 게임동아리 EXP의 게임개발 스터디 참고자료로 만든 프로젝트입니다.
- * 게임개발과 직접적인 연관은 없지만, Tool engineering의 개념을 소개하면서 Flask 사용을 고려하게 됬습니다. 
+ * 게임개발과 직접적인 연관은 없지만, Tool engineering의 개념을 소개하면서 Flask 사용을 고려하게 됬습니다.
+
 * 홍익대학교 컴퓨터공학과 알고리즘 소모임 HI-ARC에서 Flask 사용법을 교육하기 위해 참고하는 프로젝트이기도 합니다. 
 * 재활용을 고려해서, 앞으로도 추가되었으면 내용들을 이슈로 등록해주시면 되겠습니다.
 
@@ -13,7 +14,7 @@
 
  1) windows <br>
   * [python 공식 홈페이지](https://python.org)에서 최신버전으로 다운로드(3.5)
-   * (옵션) `제어판 > 시스템 및 보안 > 시스템`에서 `고급 시스템 설정 > 고급 탭 > 환경 변수 (Advanced system setting > Advanced > Environment variables)로 들어간다. 시스템 변수에서 Path 변수를 클릭하여 수정. Path 변수의 값 맨 오른쪽에 `;` 를 붙이고 python이 설치된 경로를 입력. (예시: Path -> C:\Program Files\Blah;C\Python35) 여기서 `;` 는 경로 간의 구분자 역할을 해준다.   
+   * (옵션) `제어판 > 시스템 및 보안 > 시스템`에서 `고급 시스템 설정 > 고급 탭 > 환경 변수 (Advanced system setting > Advanced > Environment variables)`로 들어간다. 시스템 변수에서 Path 변수를 클릭하여 수정. Path 변수의 값 맨 오른쪽에 `;` 를 붙이고 python이 설치된 경로를 입력. (예시: Path -> `C:\Program Files\Blah;C\Python35`) 여기서 `;` 는 경로 간의 구분자 역할을 해준다.   
   * [여기서](https://bootstrap.pypa.io) get-pip.py 파일을 내려받고, python get-pip.py 로 pip를 설치한다. <br>
 
  2) mac : brew install python
@@ -33,7 +34,7 @@
 
   echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
   ```
-   * `~/.bash_profile` 관련 : Ubuntu일 경우 `~/.bashrc`로 수정. zsh를 기본 셸로 사용하는 경우, `~/.zsh`로 수정한다.
+   * `~/.bash_profile` 관련 : Ubuntu일 경우 `~/.bashrc`로 수정. zsh를 기본 셸로 사용하는 경우, `~/.zshrc`로 수정한다.
   * (옵션2) [python-build](https://github.com/yyuu/pyenv/tree/master/plugins/python-build)를 이용한 설치
   
 ```sh
@@ -59,6 +60,15 @@ Flask로 웹프로그래밍을 시작하기 위해 먼저 알아둬야하는 몇
 
 ## 구조(라 할 것도 없다)
 
+```
+flask-demo
+├── README.md
+├── app.py
+└── templates
+    ├── a.html
+    ├── b.html
+    └── layout.html
+```
 
 ## Flask로 개발하면서 참고해볼만한 공식문서
 
