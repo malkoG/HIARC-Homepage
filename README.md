@@ -10,18 +10,18 @@
 ## 사용법
 
 * 준비물 : python, pip
- 1. windows
+ 1) windows
   * [python 공식 홈페이지](https://python.org)에서 최신버전으로 다운로드(3.5)
    * (옵션) `제어판 > 시스템 및 보안 > 시스템`에서 `고급 시스템 설정 > 고급 탭 > 환경 변수 (Advanced system setting > Advanced > Environment variables)로 들어간다. 시스템 변수에서 Path 변수를 클릭하여 수정. Path 변수의 값 맨 오른쪽에 `;` 를 붙이고 python이 설치된 경로를 입력. (예시: Path -> C:\Program Files\Blah;C\Python35) 여기서 `;` 는 경로 간의 구분자 역할을 해준다.   
   * [여기서](https://bootstrap.pypa.io) get-pip.py 파일을 내려받고, python get-pip.py 로 pip를 설치한다.
- 2. mac : brew install python
+ 2) mac : brew install python
   * (옵션)
   ```sh
   brew install pyenv
   pyenv install 3.5.0
   pyenv global 3.5.0
   ```
- 3. linux : sudo apt-get install python
+ 3) linux : sudo apt-get install python
   * (옵션)
   ```sh
   git clone https://github.com/yyuu/pyenv.git ~/.pyenv
