@@ -61,12 +61,17 @@ Flask로 웹프로그래밍을 시작하기 위해 먼저 알아둬야하는 몇
 ## 구조(라 할 것도 없다)
 
 ```
-flask-demo
+.
 ├── README.md
 ├── app.py
+├── static
+│   ├── style.css
+│   └── style1.css
 └── templates
     ├── a.html
     ├── b.html
+    ├── c.html
+    ├── layout-bootstrap.html
     └── layout.html
 ```
 
@@ -75,8 +80,8 @@ flask-demo
 * **Python**
  * [파이썬 표준 라이브러리](https://docs.python.org/3.5/library/) : 파이썬에서 디폴트로 지원하는 여러가지 함수들을 설명
  * [Flask](http://flask.pocoo.org) : 플라스크 사용법을 알려줌
-  * [한글판](http://flask-docs-kr.readthedocs.io/ko/latest/)
-  * [Jinja](http://jinja.pocoo.org) : 템플릿 엔진
+   * [한글판](http://flask-docs-kr.readthedocs.io/ko/latest/)
+   * [Jinja](http://jinja.pocoo.org) : 템플릿 엔진
  * [SQLAlchemy](http://www.sqlalchemy.org) : ORM(객체-관계 매퍼), 데이터베이스 이용 시 참고.
  * [scrapy](http://scrapy.org) : 웹 스크래핑
  * [pandas](http://pandas.pydata.org/index.html) : csv, xlsx, json 파일을 긁어서 행렬의 형태로 변환. 데이터 분석용으로 이용 
