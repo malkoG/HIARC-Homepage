@@ -12,6 +12,10 @@ def hello_world():
 def example1():
     return render_template('a.html')
 
+@app.route('/a2/<text_input>')
+def example1a(text_input):
+    return render_template('a2.html', text__input=text_input)
+
 @app.route('/b')
 def example2():
     return render_template('b.html')
