@@ -1,6 +1,6 @@
 # 소개
 
-* [강의]()
+* [강의](https://speakerdeck.com/rijgndqw012/python-web-development)
 
 * 이 프로젝트는 홍익대학교 게임동아리 EXP의 게임개발 스터디 참고자료로 만든 프로젝트입니다.
  * 게임개발과 직접적인 연관은 없지만, Tool engineering의 개념을 소개하면서 Flask 사용을 고려하게 됬습니다.
