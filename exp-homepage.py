@@ -24,7 +24,7 @@ def example2():
 def example3():
     return render_template('c.html')
 
-@app.route('roulette')
+@app.route('/roulette')
 def roulette():
     return render_template('d.html')
 
