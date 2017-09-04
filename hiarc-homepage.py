@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
 
 app = Flask(__name__)
 
@@ -16,7 +16,9 @@ class Student:
 @app.route('/apply', methods=['GET', 'POST'])
 def apply_page():
     if request.method == 'POST':
-        
+        apply_form = request.form
+        Student(apply_form)
+        flash(apply_form['name'] + "님, 지원해주셔서 감사합니다! Slack 초대장을 확인되는대로 빠른 시일내에 이메일로 발송할 예정이니 참고바랍니다!")
     return render_template('apply.html')
 
 @app.route('/admin/applies')
