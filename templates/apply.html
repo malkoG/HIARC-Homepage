@@ -1,8 +1,10 @@
 {% extends 'apply_layout.html' %}
 {% block title %}HI-ARC에 지원하세요!{% endblock %}
 {% block head %}
-    {{ super() }}
+<style>
+</style>
 {% endblock %}
+
 {% block content %}
 <div id="apply-form">
     <form class="form-horizontal" name="apply_form" method="POST" action="/apply">
@@ -58,4 +60,7 @@
         <button class="btn btn-primary" type="submit">제출</button> 
     </form>
 </div>
+
+
 {% endblock %}
+
